@@ -161,7 +161,7 @@ const HomePage = () => {
             {/* Text Content - Right Side */}
             <div className="col-span-1 origin-right scale-25 sm:scale-35 md:scale-55 lg:scale-75 xl:scale-100">
               <div className="text-center lg:text-right">
-                <div className="inline-block bg-yellow-100 text-yellow-800 px-5 py-2 rounded-full text-[1.85rem] lg:text-[2.35rem] font-black tracking-tight leading-tight lg:tracking-normal lg:leading-normal mb-14 sm:mb-6 inline-badge transform origin-top scale-y-[1.45]">
+                <div className="inline-block bg-yellow-100 text-yellow-800 px-5 py-2 rounded-full text-[1.85rem] lg:text-[2.35rem] font-black tracking-tight leading-tight lg:tracking-normal lg:leading-normal mb-20 sm:mb-6 inline-badge transform origin-top scale-y-[1.45]">
                   المنصة الرائدة في حلول الدفع الألكتروني في اليمن
                 </div>
                 <p className="hero-subtitle text-[clamp(1.5rem,5.2vw,1.65rem)] md:text-[1.6rem] lg:text-[1.9rem] text-gray-700 mb-0 sm:mb-8 leading-[clamp(2.4rem,6.9vw,2.6rem)] md:leading-[2.35rem] lg:leading-[2.7rem] font-semibold">
