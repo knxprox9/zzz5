@@ -177,8 +177,8 @@ const HomePage = () => {
                     ابدأ مشروعك الآن
                     <ArrowLeft className="w-5 h-5" />
                   </Link>
-                  {/* زر العرض التوضيحي - مخفي في الجوال، ظاهر في سطح المكتب */}
-                  <button className="hidden sm:flex hero-button border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-yellow-500 hover:text-yellow-600 transition-all duration-300 items-center justify-center gap-2">
+                  {/* زر العرض التوضيحي - يظهر فقط في سطح المكتب، مخفي تماماً في الجوال */}
+                  <button className="hidden sm:inline-flex hero-button border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-yellow-500 hover:text-yellow-600 transition-all duration-300 items-center justify-center gap-2">
                     <Play className="w-5 h-5" />
                     شاهد العرض التوضيحي
                   </button>
