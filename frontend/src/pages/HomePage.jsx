@@ -203,6 +203,13 @@ const HomePage = () => {
                   />
                 </div>
               </div>
+              {/* زر العرض التوضيحي تحت Samsung في الجوال فقط */}
+              <div className="block sm:hidden mt-4 text-center">
+                <button className="hero-button border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-xl font-semibold text-base hover:border-yellow-500 hover:text-yellow-600 transition-all duration-300 flex items-center justify-center gap-2 mx-auto">
+                  <Play className="w-4 h-4" />
+                  شاهد العرض التوضيحي
+                </button>
+              </div>
             </div>
           </div>
           {/* Full-width trust metrics bar below the grid */}
