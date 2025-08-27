@@ -169,7 +169,8 @@ const HomePage = () => {
                 <p className="hero-subtitle text-[clamp(1.5rem,5.2vw,1.65rem)] md:text-[1.6rem] lg:text-[1.9rem] text-gray-700 mb-0 sm:mb-8 leading-[clamp(2.4rem,6.9vw,2.6rem)] md:leading-[2.35rem] lg:leading-[2.7rem] font-semibold">
                   نمنحك تجربة دفع وشحن آمنة وسلسة، مصمم لتلبية معاملاتك المالية اليومية بأعلى درجات الكفاءة والموثوقية بواجهة عصرية وسهلة الاستخدام، يجعل التعامل الرقمي أسرع وأكثر متعة مع دعم العملات الرقمية والبطاقات الإلكترونية مسبقة الدفع مثل لتجربة مبتكرة وموثوقة بين يديك
                 </p>
-                <div className="flex flex-col sm:flex-row gap-2 justify-center lg:justify-start mb-4 mt-0 sm:mt-8">
+                {/* زر ابدأ مشروعك الآن فقط في الجوال */}
+                <div className="block sm:hidden mb-4 mt-0">
                   <Link
                     to="/contact"
                     className="hero-button cta-button bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-yellow-600 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2"
@@ -177,8 +178,18 @@ const HomePage = () => {
                     ابدأ مشروعك الآن
                     <ArrowLeft className="w-5 h-5" />
                   </Link>
-                  {/* زر العرض التوضيحي - يظهر فقط في سطح المكتب، مخفي تماماً في الجوال */}
-                  <button className="hidden sm:inline-flex hero-button border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-yellow-500 hover:text-yellow-600 transition-all duration-300 items-center justify-center gap-2">
+                </div>
+                
+                {/* الأزرار معاً في سطح المكتب */}
+                <div className="hidden sm:flex flex-row gap-2 justify-center lg:justify-start mb-4 mt-8">
+                  <Link
+                    to="/contact"
+                    className="hero-button cta-button bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-yellow-600 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2"
+                  >
+                    ابدأ مشروعك الآن
+                    <ArrowLeft className="w-5 h-5" />
+                  </Link>
+                  <button className="hero-button border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-yellow-500 hover:text-yellow-600 transition-all duration-300 flex items-center justify-center gap-2">
                     <Play className="w-5 h-5" />
                     شاهد العرض التوضيحي
                   </button>
